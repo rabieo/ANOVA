@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
+import ExecutiveLinks from './Executivelinks'
 
 const Navbar = () => {
     return (
@@ -10,6 +11,7 @@ const Navbar = () => {
                 <Link to='/' className="brand-logo black-text">ANOVA</Link>
                 <SignedInLinks />
                 <SignedOutLinks />
+                <ExecutiveLinks />
             </div>
         </nav>
     )

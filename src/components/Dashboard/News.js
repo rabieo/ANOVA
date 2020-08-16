@@ -3,7 +3,7 @@ import Newsummary from './Newssummary'
 
 const News = () => {
     return (
-        <div className="tutorials-list section">
+        <div className="News-list section">
             <Newsummary />
             <Newsummary />
             <Newsummary />

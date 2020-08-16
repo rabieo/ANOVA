@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 
 
 
-class Signin extends Component {
+class CreateTutorial extends Component {
 
     state = {
-        email: '',
-        password: ''
+        title: '',
+        content: '',
     }
 
     handleChange = (e) => {
@@ -24,19 +24,19 @@ class Signin extends Component {
         return (
             <div className="container">
                 <form className="white">
-                    <h5 className="grey-text text-darken-3">Sign In</h5>
+                    <h5 className="grey-text text-darken-3">Create Tutorial</h5>
                     <div className="input-field">
-                        <label htmFor="email">Email</label>
-                        <input type="email" id="email" onChange={this.handleChange} />
+                        <label htmFor="title">Title</label>
+                        <input type="text" id="title" onChange={this.handleChange} />
                     </div>
 
                     <div className="input-field">
-                        <label htmFor="password">Password</label>
-                        <input type="password" id="password" onChange={this.handleChange} />
+                        <label htmFor="content"> Tutorial Summary</label>
+                        <textarea id="content" className="materialize-textarea" onChange={this.handleChange} />
                     </div>
 
                     <div className="imput-field">
-                        <button className="btn red z-depth-0" onClick={this.handleSubmit}>Login</button>
+                        <button className="btn red z-depth-0" onClick={this.handleSubmit}>Post</button>
                     </div>
                 </form>
 
@@ -45,4 +45,4 @@ class Signin extends Component {
     }
 }
 
-export default Signin
+export default CreateTutorial

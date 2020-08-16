@@ -2,7 +2,7 @@ import React from 'react'
 
 const Newssummary = () => {
     return (
-        <div className="card z-depth-2 tutorials-summary">
+        <div className="card z-depth-2 News-summary">
             <div className="card-content grey-text text-darken-3">
                 <span className="card-title">News Title</span>
                 <p>Posted by Vanders</p>
