@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav className="nav-wrapper transparent">
             <div className="container">
-                <Link to='/' className="brand-logo black-text">ANOVA</Link>
+                <Link to='/' className="brand-logo black-text">McMaster GDS</Link>
                 <SignedInLinks />
                 <SignedOutLinks />
                 <ExecutiveLinks />

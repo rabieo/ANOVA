@@ -1,48 +1,35 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 
 
-class CreateNews extends Component {
+const CreateNews = () => {
 
-    state = {
-        title: '',
-        content: ''
-    }
 
-    handleChange = (e) => {
-        this.setState({
-            [e.target.id]: e.target.value
-        })
-    }
+    return (
+        <div className="container">
+            <form className="white">
+                <h5 className="grey-text text-darken-3">Create News</h5>
+                <div className="input-field">
+                    <label htmFor="title">Title</label>
+                    <input type="text" id="title" />
+                </div>
 
-    handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(this.state);
+                <div className="input-field">
+                    <label htmFor="content"> News Content</label>
+                    <textarea id="content" className="materialize-textarea" />
+                </div>
 
-    }
-    render() {
-        return (
-            <div className="container">
-                <form className="white">
-                    <h5 className="grey-text text-darken-3">Create News</h5>
-                    <div className="input-field">
-                        <label htmFor="title">Title</label>
-                        <input type="text" id="title" onChange={this.handleChange} />
-                    </div>
+                <div className="imput-field">
+                    <button className="btn red z-depth-0" >Post</button>
+                </div>
+            </form>
 
-                    <div className="input-field">
-                        <label htmFor="content"> News Content</label>
-                        <textarea id="content" className="materialize-textarea" onChange={this.handleChange} />
-                    </div>
+        </div>
+    )
 
-                    <div className="imput-field">
-                        <button className="btn red z-depth-0" onClick={this.handleSubmit}>Post</button>
-                    </div>
-                </form>
-
-            </div>
-        )
-    }
 }
+
+
 
 export default CreateNews

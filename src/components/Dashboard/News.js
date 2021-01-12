@@ -1,15 +1,20 @@
 import React from 'react'
-import Newsummary from './Newssummary'
+import Newssummary from './Newssummary'
+
+
 
 const News = () => {
-    return (
-        <div className="News-list section">
-            <Newsummary />
-            <Newsummary />
-            <Newsummary />
-            <Newsummary />
-            <Newsummary />
 
+
+
+
+    return (
+
+        <div className="news-list section">
+
+            <Newssummary title="Adel" newsDescription="Omar" date="25" />
+            <Newssummary />
+            <Newssummary />
         </div>
     )
 }

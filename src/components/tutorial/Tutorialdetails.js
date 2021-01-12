@@ -1,13 +1,13 @@
 import React from 'react'
 
-const TutorialDetails = (props) => {
-    const id = props.match.params.id;
+const TutorialDetails = () => {
+
 
     return (
         <div className="container section News-details">
             <div className="card z-depth-2">
                 <div className="card-content">
-                    <span className="card-title">Tutorial title - {id}</span>
+                    <span className="card-title">Tutorial title</span>
                     <p>Lorem dasdas fdgdfg sdfdg  fdgdfg dgdf gdf gdfg fdgdfgdg dfh hjghjujjk ghjfg fd gfs sdfsdgfhghfghf fg hfg hfg hfg hgfhgfh gfh</p>
                 </div>
                 <div className="card-action grey lighten-4 grey-text">

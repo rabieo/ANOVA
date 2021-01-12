@@ -5,9 +5,6 @@ const Tutorial = () => {
     return (
         <div className="tutorials-list section">
             <TutorialSummary />
-
-
-
         </div>
     )
 }
