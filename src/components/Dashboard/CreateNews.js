@@ -1,12 +1,6 @@
 import React, { useState, Component } from 'react'
-import { connect } from 'react-redux'
-import { db } from "C:/Users/adel/Desktop/Web development/ANOVA/anova/src/config/fbconfig.js"
 
-const post = (newsTitle, newsDescription) => { db.collection("news").add({ title: newsTitle, content: newsDescription }) }
-
-
-
-
+import {auth, firestore, firebase} from '../../config/fbconfig';
 
 
 const CreateNews = () => {
@@ -21,7 +15,10 @@ const CreateNews = () => {
         setNewsDescription(event.target.value)
     }
 
-    const handlePost = () => { db.collection("news").add({ title: newsTitle, content: newsDescription }) }
+    const handlePost = (event) => { 
+        firestore.collection("news").add({ title: newsTitle, content: newsDescription });
+        event.preventDefault();
+    }
 
 
     return (
@@ -47,7 +44,5 @@ const CreateNews = () => {
     )
 
 }
-
-
 
 export default CreateNews
