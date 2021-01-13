@@ -4,10 +4,6 @@ import Newssummary from './Newssummary'
 
 
 const News = () => {
-
-
-
-
     return (
 
         <div className="news-list section">
